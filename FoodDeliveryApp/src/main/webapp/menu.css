@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-buttons {
+	display: flex;
+	margin-left: 50px;
+}
+
+.header-buttons button {
+	background-color: #d9534f;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.header-buttons button:hover {
+	background-color: #c9302c;
+}
+
+#app-logo {
+	max-width: 100px;
+
+}
+
+/*.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}*/
+
+
+.container {
+	font-size: larger;
+	margin: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #be1313;
+	/* Light gray background color for the box */
+	border: 3px solid rgb(255, 255, 128);
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.left-side {
+	width: 70%;
+}
+
+.right-side {
+	width: 30%;
+	text-align: right;
+}
+
+.rating {
+	font-size: 50px;
+	/* Increase font size for the star */
+	color: #FFD700;
+	/* Gold color for the star */
+	/* Dark gray background color for the star */
+	padding: 10px;
+	/* Add padding to the star */
+	margin: 0;
+	/* Remove default margin for the star */
+}
+
+input[type="number"] {
+	width: 50px;
+}
+
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 1rem;
+}
+
+.menu-card {
+	width: 300px;
+	margin: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 1rem;
+	text-align: center;
+	transition: transform 0.3s ease-in-out;
+	background-color: rgb(215, 224, 217);
+}
+
+.menu-card:hover {
+	transform: scale(1.05);
+}
+
+.menu-card img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+.price {
+	font-weight: bold;
+	color: #e44d26;
+}
+
+
+@media (max-width: 600px) {
+	.menu-card {
+		width: 100%;
+	}
+}
+
+.add-cart {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-bottom: 5px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.add-cart {
+	color: #fff;
+	background-color: green;
+}
+
+
+@media (max-width: 600px) {
+	.add-cart {
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+	}
+
+}
+
+.add-cart:hover {
+	filter: brightness(1.2);
+	text-decoration: scale(1.05);
+}

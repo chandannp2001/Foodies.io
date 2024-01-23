@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: lightgrey;
+}
+
+h1 {
+	text-align: center;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-buttons {
+	display: flex;
+	margin-left: 50px;
+}
+
+.header-buttons button {
+	background-color: #d9534f;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.header-buttons button:hover {
+	background-color: #c9302c;
+}
+
+#app-logo {
+	max-width: 100px;
+
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	padding: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+.food-item {
+	border: 1px solid #ddd;
+	padding-left: 30px;
+	padding-bottom: -20px;
+	margin: 2px auto;
+	margin-bottom: 10px;
+	width: 800px;
+	margin-left: 20%;
+	background-color: rgb(215, 224, 217);
+}
+
+.food-item p {
+	margin-bottom: -20px;
+	/* Adjust this value to your preference */
+}
+
+input[type="number"] {
+	width: 130px;
+}
+
+
+.order-summary {
+	width: 300px;
+
+	border: 2px solid #ddd;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+table {
+	width: 100%;
+}
+
+table td {
+	padding: 50px;
+	border-bottom: 2px solid #ddd;
+}
+
+table td:last-child {
+	text-align: right;
+}
+
+
+/* Default styles for both buttons */
+.remove-btn,
+.update-btn {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 30px;
+
+	border: none;
+	border-radius: 10px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.remove-btn {
+	color: #fff;
+	background-color: #c9302c;
+
+}
+
+.update-btn {
+	color: #fff;
+	background-color: green;
+	margin-bottom: -10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+
+	.remove-btn,
+	.update-btn {
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+	}
+}
+
+/* Hover styles to make the color brighter on mouseover */
+.remove-btn:hover,
+.update-btn:hover {
+	filter: brightness(1.2);
+	/* Increase brightness on hover */
+	transform: scale(1.05);
+	/* Add a slight scale effect on hover */
+}
+
+
+
+#addmore,
+#checkout {
+	margin-top: 30px;
+	margin-left: 21%
+}

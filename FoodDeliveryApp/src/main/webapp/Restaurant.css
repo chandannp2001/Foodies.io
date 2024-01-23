@@ -1,0 +1,125 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+h1 {
+	text-align: center;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 30px auto;
+
+	padding: 20px;
+
+}
+
+/*
+.restaurant-card {
+    background-color: rgb(215, 224, 217);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding-bottom: 20px;
+   
+   
+    transition: transform 0.3s ease-in-out;
+   
+}*/
+
+.restaurant-card {
+	background-color: rgb(215, 224, 217);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	overflow: hidden;
+	width: calc(33.33% - 20px);
+	margin: 10px;
+	margin-right: 10px;
+	padding-bottom: 20px;
+	max-width: calc(33.33% - 20px);
+	box-sizing: border-box;
+	transition: transform 0.3s ease-in-out;
+}
+
+
+
+.restaurant-card:hover {
+	transform: scale(1.05);
+}
+
+.restaurant-card img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	max-height: 150px;
+}
+
+@media (max-width: 768px) {
+	.restaurant-card {
+		width: calc(50% - 20px);
+		/* For smaller screens, show two cards per row */
+	}
+}
+
+@media (max-width: 480px) {
+	.restaurant-card {
+		width: calc(100% - 20px);
+		/* For even smaller screens, show one card per row */
+	}
+}
+
+.restaurant-details {
+	padding: 20px;
+}
+
+h2,
+p,
+.rating {
+	margin: 0;
+}
+
+.rating {
+	color: #ffc107;
+}
+
+#app-logo {
+	max-width: 100px;
+
+}
+
+.header-buttons {
+	display: flex;
+	margin-left: 50px;
+}
+
+.header-buttons button {
+	background-color: #d9534f;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.header-buttons button:hover {
+	background-color: #c9302c;
+}
